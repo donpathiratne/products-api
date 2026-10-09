@@ -20,6 +20,10 @@ public class Product {
         return name;
     }
 
+//    public String getName() {
+//        return name;
+//    }
+
     public double getPrice() {
         return price;
     }
