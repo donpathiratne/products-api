@@ -26,5 +26,11 @@ public class ProductService {
                 .findFirst();
     }
 
+    public void deleteProduct(Long id){
+        products.removeIf(product -> product.getId().equals(id));
+    }
+
+
+
 
 }
