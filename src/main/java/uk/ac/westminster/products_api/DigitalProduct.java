@@ -5,7 +5,10 @@ public class DigitalProduct extends Product{
     private double fileSizeMB;
 
     // constructor
-    public DigitalProduct(){}
+    public DigitalProduct(){
+        super();
+    }
+
 
     public DigitalProduct(Long id,
                           String name,

@@ -36,6 +36,23 @@ public class ProductService {
                 .toList();
     }
 
+        // create the DigitalProduct
+    public ProductService(){
+        products.add(new DigitalProduct
+                        (1L, "E-book", 400,
+                        "www.ebook.lk/harrypotter", 500));
+        // create the PhysicalProduct
+        products.add(new PhysicalProduct
+                        (2L,"Book",500,
+                        0.6,"15*10*3cm"));
+    }
+
+    // id, name and prize fields are coming from parent Product class. Both DigitalProduct and
+    // PhysicalProduct inherit their getters, allowing to appear properties in JSON response.
+
+
+
+
 
 
 }
